@@ -65,6 +65,16 @@ export default App;
 ```
 
 #### Routes
+
+```
+import {BrowserRouter as Router} from 'react-router-dom'
+ReactDOM.render(
+      <Router>
+          <App />
+      </Router>,
+    document.getElementById('root')
+```
+
 ```
 import {Switch, Route} from 'react-router-dom'
 
@@ -84,6 +94,12 @@ function App() {
 }
 export default App;
 ```
+##### Link
+```
+import {Link} from 'react-router-dom'
+
+<Link to="/home" className={classes.item}>HOME</Link>
+```
 
 
 ##### useParams  - usar parâmetros da url
@@ -97,6 +113,7 @@ import {useHistory} from 'react-router'
 const history = useHistory()
 history.goBack()
 ```
+
 
 ## Se for usar Material-Ui
 ```
