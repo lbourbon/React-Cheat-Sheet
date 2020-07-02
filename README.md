@@ -135,7 +135,7 @@ import { Button } from '@material-ui/core';
 
 function MyButton(){
   return(
-    <Button variant="outlined" color="primary" href="#send">
+    <Button variant="outlined" color="primary" onClick={() => { alert('clicked') }}>
       ENVIAR
     </Button>
   ) 
@@ -170,6 +170,80 @@ function Componente(){
     </div>
 ```
 
+## HOOKS
+
+useState :  para qualquer dado mutável dinamicamente:
+```
+import { useState } from 'react';
+
+const [count, setCount] = useState(0);
+<button onClick={() => setCount(count + 1)}>+</button>
+```
+useEfect : para operar efeitos colaterais, mudar algo quando uma variável mudar, no exemplo abaixo quando count muda, a função executa e re-renderiza o valor
+se usar [ ] o array vazio, a função executa quanto o componente monta
+se acrescentar um return antes da } , passar uma função no return que executa quando o componente desmonta
+```
+useEffect(() => {
+  document.title = `Você clicou ${count} vezes.`
+}, [count])
+```
+
+
+
+## Context 
+
+```
+import React, { useState, useEffect } from 'react'
+import firebase from 'firebase/app'
+import "firebase/auth";
+
+const UserContext = React.createContext()
+
+function UserContextProvider(props){
+
+  const [isSignedIn, setIsSignedIn] = useState(false)
+  const [currentUser, setCurrentUser] = useState("")
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged(
+      (user) => {
+        setIsSignedIn(!!user)
+        setCurrentUser(user)
+      }
+    )
+  }, [])
+
+  function signOut() {
+    firebase.auth().signOut()
+  }
+
+  return <UserContext.Provider value={{isSignedIn, signOut, currentUser}}>
+            {props.children}
+         </UserContext.Provider>
+}
+
+export  {UserContextProvider, UserContext}
+```
+
+NO INDEX.js
+```
+import {UserContextProvider} from './context/userContext'
+
+ReactDOM.render(
+    <UserContextProvider>
+      <Router>
+          <App />
+      </Router>
+    </UserContextProvider>,
+    document.getElementById('root')
+)
+```
+
+USANDO:
+```
+import React, {useContext} from 'react'
+const { isSignedIn, currentUser } = useContext(UserContext)
+```
 
 
 ## Deploy
