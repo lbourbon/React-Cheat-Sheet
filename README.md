@@ -10,10 +10,8 @@ npm start
 ```
 Vai abrir o navegador com o endereço: http://localhost:3000/
 
-Se for usar router (Link, Redirect...)
-```
-npm install react-router-dom
-```
+Se for usar router (Route, Link, Redirect...)
+```npm install react-router-dom```
 
 Se for usar Material-UI: 
 ```npm install @material-ui/core```
@@ -32,7 +30,7 @@ ReactDOM.render(
 ```
 que vai renderizar o componente <App /> no seu index.html
 
-#### Componentes
+##### Componentes
 O react é desenvolvido de forma que os componentes que a gente crie sejam reutilizáveis:
 Para criar um componente, crie um novo arquivo Componente.js
 ```
@@ -66,6 +64,39 @@ function App() {
 export default App;
 ```
 
+#### Routes
+```
+import {Switch, Route} from 'react-router-dom'
+
+function App() {
+  return (
+    <div>
+        <Nav />
+        <Switch>
+            <Route exact path="/"><Home /></Route>
+            <Route exact path="/home"><Home /></Route>
+            <Route exact path="/login"><Login /></Route>
+            <Route exact path="/aprenda" component={Aprenda} />
+            <PrivateRoute exact path="/aprenda/:curso" component={Curso} />
+        </Switch>
+    </div>
+  )
+}
+export default App;
+```
+
+
+##### useParams  - usar parâmetros da url
+```
+import {useParams} from 'react-router'
+const {param1, param2} = useParams()
+```
+##### useHistory
+```
+import {useHistory} from 'react-router'
+const history = useHistory()
+history.goBack()
+```
 
 ## Se for usar Material-Ui
 ```
