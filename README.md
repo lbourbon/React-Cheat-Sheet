@@ -257,7 +257,7 @@ Fazer login e iniciar repo:
 firebase login
 firebase init
 ```
- - Escolher ferramentas (apertar espaço para marcar): Hosting? Firestore?
+ - Escolher ferramentas (apertar espaço para marcar): Hosting! Firestore?
  - Use an existing project
  - Seleciona o projeto criado
  - Use as public folder? ```build```
