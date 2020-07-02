@@ -17,7 +17,6 @@ Se for usar Material-UI:
 ```npm install @material-ui/core```
 
 
-
 ## Atom (ou IDE de escolha)
 
 Abrir pasta do projeto.
