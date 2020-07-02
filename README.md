@@ -245,13 +245,27 @@ const { isSignedIn, currentUser } = useContext(UserContext)
 ```
 
 
-## Deploy
+## Deploy no Firebase
 
-- Acessar firebase.com ; criar o projeto
+- Acessar firebase.com ; criar o projeto; será fornecido um sdk
+- Adicionar SDK na parte inferior do body
+
+Instalar Firebase ```npm install -g firebase-tools``` (precisa colocar sudo antes ??)
+
+Fazer login e iniciar repo: 
 ```
+firebase login
 firebase init
+```
+ - Escolher ferramentas (apertar espaço para marcar): Hosting? Firestore?
+ - Use an existing project
+ - Seleciona o projeto criado
+ - Use as public folder? ```build```
+ - Single Page App? ```y```
+ - Overwrite build? ```NO```
 
 ```
 npm run build
 firebase deploy
 ```
+Repetir os 2 últimos comandos nos novos deployes
