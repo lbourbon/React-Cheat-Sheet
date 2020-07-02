@@ -1,8 +1,8 @@
 # React Cheat Sheet
 
 ## Terminal
-Para criar o app:
 
+Para criar o app:
 ```
 npx create-react-app my-app-name
 cd my-app-name
@@ -15,9 +15,8 @@ Se for usar router (Link, Redirect...)
 npm install react-router-dom
 ```
 
-Se for usar Material-UI: ```
-npm install @material-ui/core
-```
+Se for usar Material-UI: 
+```npm install @material-ui/core```
 
 
 
