@@ -11,63 +11,7 @@ npm start
 Vai abrir o navegador com o endereço: http://localhost:3000/
 
 
-## Se for usar Material-Ui
-```
-npm install @material-ui/core
-```
-#### Se quiser usar ícones:
-```
-npm install @material-ui/icons
-```
-Material ui foi desenvolvido baseado na fonto Roboto, para instalar acrescentar no index.html:
-```
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" 
-```
-
-### USO:
-```
-import React from 'react'
-import { Button } from '@material-ui/core';
-
-function MyButton(){
-  return(
-    <Button variant="outlined" color="primary" href="#send">
-      ENVIAR
-    </Button>
-  ) 
-}
-export default MyButton
-```
-
-#### Customizar CSS com material-ui
-```
-import { makeStyles } from '@material-ui/core'
-
-const useStyles = makeStyles(theme => ({
-  container: {
-    background: 'rgb(230, 230, 230)',
-    display: 'flex',
-    flexFlow: 'row nowrap',
-    justifyContent: 'space-around',
-    alignItems: 'stretch',
-    minHeight: '100vh',
-    padding: 15,
-  },
-  postSpace:{
-    marginBottom: 15,
-  },
-}))
-
-function Componente(){
-  const classes = useStyles()
-
-  return(
-    <div className={classes.container}>
-    </div>
-```
-
-
-## Atom (ou idle de escolha)
+## Atom (ou IDE de escolha)
 
 Abrir pasta do projeto.
 No index.js existe a função:
@@ -112,6 +56,64 @@ function App() {
 
 export default App;
 ```
+
+
+## Se for usar Material-Ui
+```
+npm install @material-ui/core
+```
+#### Se quiser usar ícones:
+```
+npm install @material-ui/icons
+```
+Material ui foi desenvolvido baseado na fonto Roboto, para instalar acrescentar no index.html:
+```
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" 
+```
+
+#### USO:
+```
+import React from 'react'
+import { Button } from '@material-ui/core';
+
+function MyButton(){
+  return(
+    <Button variant="outlined" color="primary" href="#send">
+      ENVIAR
+    </Button>
+  ) 
+}
+export default MyButton
+```
+
+#### Customizar CSS com material-ui
+```
+import { makeStyles } from '@material-ui/core'
+
+const useStyles = makeStyles(theme => ({
+  container: {
+    background: 'rgb(230, 230, 230)',
+    display: 'flex',
+    flexFlow: 'row nowrap',
+    justifyContent: 'space-around',
+    alignItems: 'stretch',
+    minHeight: '100vh',
+    padding: 15,
+  },
+  postSpace:{
+    marginBottom: 15,
+  },
+}))
+
+function Componente(){
+  const classes = useStyles()
+
+  return(
+    <div className={classes.container}>
+    </div>
+```
+
+
 
 ## Deploy
 
