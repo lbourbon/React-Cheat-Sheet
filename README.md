@@ -1,4 +1,4 @@
-# React 
+# React Cheat Sheet
 
 ## Terminal
 Para criar o app:
@@ -9,6 +9,16 @@ cd my-app-name
 npm start
 ```
 Vai abrir o navegador com o endereço: http://localhost:3000/
+
+Se for usar router (Link, Redirect...)
+```
+npm install react-router-dom
+```
+
+Se for usar Material-UI: ```
+npm install @material-ui/core
+```
+
 
 
 ## Atom (ou IDE de escolha)
