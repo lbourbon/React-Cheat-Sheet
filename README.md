@@ -124,7 +124,7 @@ npm install @material-ui/icons
 ```
 Material ui foi desenvolvido baseado na fonto Roboto, para instalar acrescentar no index.html:
 ```
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 ```
 
 #### USO:
