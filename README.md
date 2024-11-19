@@ -1,5 +1,28 @@
 # React Cheat Sheet
 
+## Deploy APA no Firebase
+
+terminal:
+```
+npm start
+```
+Vai abrir o navegador com o endereço: http://localhost:3000/
+
+Depois das alterações
+
+```git add .```
+```git commit -m "msg"```
+```git push origin master```
+
+Verificar a versão node 
+acho que tem que usar o 15 para o build e o 18 para o deploy
+```nvm ls```
+```nvm use xx.xx.x``` mudar versão
+
+```npm run build```
+```firebase deploy```
+
+
 ## Terminal
 
 Para criar o app:
