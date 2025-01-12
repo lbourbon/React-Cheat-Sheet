@@ -10,6 +10,8 @@ Vai abrir o navegador com o endereço: http://localhost:3000/
 
 Depois das alterações
 
+LEMBRAR DE REMOVER ADMIN!
+
 ```git add .```
 ```git commit -m "msg"```
 ```git push origin master```
