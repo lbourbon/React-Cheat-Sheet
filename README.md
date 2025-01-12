@@ -8,6 +8,9 @@ npm start
 ```
 Vai abrir o navegador com o endereço: http://localhost:3000/
 
+OBS: NODE VERSION:  
+```nvm use 14.21.3``` PARA LOCAL E 18.20.5 PARA DEPLOY
+
 Depois das alterações
 
 LEMBRAR DE REMOVER ADMIN!
@@ -24,6 +27,7 @@ acho que tem que usar o 15 para o build e o 18 para o deploy
 ```npm run build```
 ```firebase deploy```
 
+RESPONDER COM "N" PARA OS REMOVE INDEX / OVERRIDES
 
 ## Terminal
 
