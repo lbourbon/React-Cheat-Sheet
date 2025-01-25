@@ -9,7 +9,7 @@ npm start
 Vai abrir o navegador com o endereço: http://localhost:3000/
 
 OBS: NODE VERSION:  
-```nvm use 14.21.3``` PARA LOCAL E 18.20.5 PARA DEPLOY
+```nvm use 14.21.3``` PARA LOCAL E 18.19.1 PARA DEPLOY
 
 Depois das alterações
 
@@ -20,7 +20,7 @@ LEMBRAR DE REMOVER ADMIN!
 ```git push origin master```
 
 Verificar a versão node 
-acho que tem que usar o 15 para o build e o 18 para o deploy
+usar o 14 para o build e o 18 para o deploy
 ```nvm ls```
 ```nvm use xx.xx.x``` mudar versão
 
