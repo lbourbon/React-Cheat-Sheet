@@ -13,7 +13,7 @@ OBS: NODE VERSION:
 
 Depois das alterações
 
-LEMBRAR DE REMOVER ADMIN!
+=> LEMBRAR DE REMOVER ADMIN !!!
 
 ```git add .```
 ```git commit -m "msg"```
